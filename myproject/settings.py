@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from datetime import timedelta
 from pathlib import Path
 import os
-import django_heroku
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -189,7 +188,7 @@ EMAIL_HOST_PASSWORD = 'nlbhjqpxbuaeocet'
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
-django_heroku.settings(locals())
+
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
